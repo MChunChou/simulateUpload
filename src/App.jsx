@@ -128,9 +128,13 @@ export default function Update() {
     }
 
     return (
-        <div className="update">
+        <div className="update">            
             <FileDrop onDrop={handleDrop}>
-                <div className="description">Using button upload to add file or Drag file to page</div>
+                <div className="description">
+                    This is <i>NOT</i> really upload system , file will delete when you close window
+                    <p/>
+                    Using button upload to add file or Drag file to page
+                </div>
                 <div className="control-bar">
                     <div className="control-btns">
                         <input type="file" id="file-upload" onChange={handleUpload} value={''}/>

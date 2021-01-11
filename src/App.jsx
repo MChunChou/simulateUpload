@@ -84,8 +84,10 @@ export default function Update() {
     }
 
     let handleDrop = (files, evt) => {
+        const tenM = 1048576;
         let uploadFiles = []
         _.each(files, (value, key) => {
+            value.size > tenM? alert("The file size should less than 5 MB") :
             // check has file exist
             _.indexOf(list.map(v => v.name), value.name) > -1 ?
                 // eslint-disable-next-line no-restricted-globals

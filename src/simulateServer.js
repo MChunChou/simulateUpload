@@ -2,7 +2,7 @@ import _ from 'underscore'
 
 const simulateServer = {
     db: {
-        files: [new File(["this is first file"], "showfirstFile.txt", {
+        files: [new File(["this is file 1"], "File1.txt", {
             type: "text/plain",
         })],
     },
